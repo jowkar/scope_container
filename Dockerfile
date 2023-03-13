@@ -19,8 +19,4 @@ RUN python3.7 -m pip install Cython "tensorflow==1.15.2" "pandas<=0.24.2" "numpy
 
 RUN python3.7 -c 'import cancerscope'
 
-# The code to run when container is started:
-#COPY entrypoint.sh ./
-#ENTRYPOINT ["./entrypoint.sh"]
-
 CMD ["/usr/bin/python3.7"]
