@@ -4,9 +4,6 @@ MAINTAINER jowkar joakim.karlsson@perkins.org.au
 
 WORKDIR /app
 
-# Make RUN commands use the new environment:
-#SHELL ["/bin/bash", "--login", "-c"]
-
 RUN apt-get update \
     && apt install -y python3-pip \
     && apt install -y python3.7 \
